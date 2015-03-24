@@ -9,9 +9,9 @@
     </parent>
 
     <packaging>jar</packaging>
-    <groupId>org.webjars</groupId>
+    <groupId>com.hindsighttesting</groupId>
     <artifactId>le_js</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>logentries-js</name>
     <description>WebJar for logentries-js</description>
     <url>http://webjars.org</url>
