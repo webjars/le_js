@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>com.hindsighttesting</groupId>
     <artifactId>le_js</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>logentries-js</name>
     <description>WebJar for logentries-js</description>
     <url>http://webjars.org</url>
@@ -21,6 +21,13 @@
         <upstream.version>0.0.3</upstream.version>
         <upstream.url>https://github.com/logentries/le_js/archive/${upstream.version}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
+        <requirejs>
+            {
+                "paths": {
+                    "le": "le"
+                }
+            }
+        </requirejs>
     </properties>
 
     <developers>
@@ -96,10 +103,4 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-      <repository>
-        <id>bintray</id>
-        <url>https://api.bintray.com/maven/hindsightsoftware/internal/le_js</url>
-      </repository>
-    </distributionManagement>
 </project>
