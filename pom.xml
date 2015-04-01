@@ -9,7 +9,7 @@
     </parent>
 
     <packaging>jar</packaging>
-    <groupId>com.hindsighttesting</groupId>
+    <groupId>org.webjars</groupId>
     <artifactId>le_js</artifactId>
     <version>0.0.3-SNAPSHOT</version>
     <name>logentries-js</name>
