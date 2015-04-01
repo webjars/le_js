@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>com.hindsighttesting</groupId>
     <artifactId>le_js</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>logentries-js</name>
     <description>WebJar for logentries-js</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/le_js</url>
         <connection>scm:git:https://github.com/webjars/le_js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/le_js.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>le_js-0.0.3</tag>
     </scm>
 
     <build>
@@ -65,13 +65,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/product"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/product" />
                                 </move>
                             </target>
                         </configuration>
