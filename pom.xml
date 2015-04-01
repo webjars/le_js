@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>le_js</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>logentries-js</name>
     <description>WebJar for logentries-js</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/le_js</url>
         <connection>scm:git:https://github.com/webjars/le_js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/le_js.git</developerConnection>
-        <tag>le_js-0.0.3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
